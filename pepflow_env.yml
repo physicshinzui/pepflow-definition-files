@@ -1,0 +1,23 @@
+name: pepflow_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - omnia
+  - defaults
+dependencies:
+  - python=3.8
+  - torchdiffeq
+  - scipy
+  - openmm
+  - biopython=1.79 # not to use 1.8.x
+  - mdtraj
+  - pdbfixer # ADD
+  - pytorch
+  - pytorch-cuda=11.8
+  - torchvision 
+  - torchaudio 
+  - pip
+#  - pip:
+#    - --index-url https://download.pytorch.org/whl/cu117
+
