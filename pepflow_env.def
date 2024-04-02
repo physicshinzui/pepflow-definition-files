@@ -35,8 +35,8 @@ From: nvidia/cuda:11.8.0-devel-ubuntu22.04
     conda env create -f pepflow_env.yml
     
     conda activate pepflow_env
-    pip install torch-scatter -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
-    pip install ml-collections==0.1.1
+    # pip install torch-scatter -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
+    #pip install ml-collections==0.1.1
     
 %environment
     # >>> conda initialize >>>
