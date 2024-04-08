@@ -1,21 +1,21 @@
 name: pepflow_env
 channels:
+  - pytorch
+  - nvidia
   - conda-forge
   - omnia
   - defaults
 dependencies:
   - python=3.8
-  - cudatoolkit=11.8
   - torchdiffeq
   - scipy
   - openmm
-  - biopython=1.79 # not to use 1.8.x
+  - biopython=1.79
+  - pdbfixer
   - mdtraj
-  - pdbfixer # ADD
+  - pytorch
+  - pytorch-cuda=11.8
   - pip
   - pip:
-    - torch==2.0.0
-    - --index-url https://download.pytorch.org/whl/cu118
-  - pip:
     - ml-collections==0.1.1
-    - torch-scatter -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+    - torch-scatter -f https://data.pyg.org/whl/torch-2.2.2+cu118.html
